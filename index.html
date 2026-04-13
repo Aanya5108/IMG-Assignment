@@ -6,13 +6,15 @@
     <title>IMG Assignment</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="top-bar">
         <div class="links">
-            <a href="#">Saharanpur Campus</a>
+            <a href="#">Saharanpur Campus <img src="arrow-down.svg" class="down-arrow"></a>
             <a href="#">Noida Campus</a>
             <a href="#">Webmail</a>
             <a href="#">iConnect</a>
@@ -40,19 +42,25 @@
 </div>
 
     <nav class="nav-bar">
-        <ul>
-            <li>INSTITUTE ⌄</li>
-            <li>ADMISSIONS ⌄</li>
-            <li>ACADEMICS ⌄</li>
-            <li>DEPARTMENTS ⌄</li>
-            <li>RESEARCH ⌄</li>
-            <li>CAMPUS LIFE ⌄</li>
-            <li>CAREERS ⌄</li>
-            <li>PLACEMENTS ⌄</li>
-            <li>RESOURCES ⌄</li>
-        </ul>
-    </nav>
+    <ul>
+        <li>INSTITUTE <img src="arrow-down.svg" class="nav-arrow"></li>
+        <li>ADMISSIONS <img src="arrow-down.svg" class="nav-arrow"></li>
+        <li>ACADEMICS <img src="arrow-down.svg" class="nav-arrow"></li>
+        <li>DEPARTMENTS <img src="arrow-down.svg" class="nav-arrow"></li>
+        <li>RESEARCH <img src="arrow-down.svg" class="nav-arrow"></li>
+        <li>CAMPUS LIFE <img src="arrow-down.svg" class="nav-arrow"></li>
+        <li>CAREERS <img src="arrow-down.svg" class="nav-arrow"></li>
+        <li>PLACEMENTS <img src="arrow-down.svg" class="nav-arrow"></li>
+        <li>RESOURCES <img src="arrow-down.svg" class="nav-arrow"></li>
+    </ul>
+</nav>
 <div class="hero-section">
+    <video autoplay muted loop playsinline class="bg-video">
+        <source src="IIT Roorkee and Around from the Sky. 00_00_17-00_02_00_compressed.mp4" type="video/mp4">
+    </video>
+    
+    <div class="video-overlay"></div>
+
     <div class="hero-content">
         <h1>RESEARCH<br>EDUCATE<br>INNOVATE<br>TOMORROW</h1>
     </div>
@@ -105,24 +113,73 @@
 </div>
 <section class="research-section">
     <div class="research-header">
-        <h2>RECENT RESEARCH</h2>
+        <p>RECENT RESEARCH</p>
         <a href="#" class="view-all">VIEW ALL</a>
     </div>
 
-  <div class="research-grid">
-    <img src="img1.png" class="item pos1">
-    <img src="img2.png" class="item pos2">
-    <img src="img3.png" class="item pos3">
-    <img src="img4.png" class="item pos4">
-    <img src="img5.png" class="item pos5">
-    <img src="img6.png" class="item pos6">
-    <img src="img7.png" class="item pos7">
-    <img src="img8.png" class="item pos8">
-</div>
+  <div class="res-container">
+        
+            <img src="img1.png" alt="Lab" class="item pos1">
+            <img src="img2.png" alt="Telescope" class="item pos2">
+            <img src="img6.png" alt="setup lab" class="item pos3">
+            <img src="img7.png" alt="Group" class="item pos4">
+            
+        
+            <img src="img4.png" alt="Cells" class="item pos5">
+            <img src="img3.png" alt="Map" class="item pos6">
+            <img src="img5.png" alt="Pyomancer image" class="item pos7">
+            <img src="img8.png" alt="Lab Scene" class="item pos8">
+        
+    </div>
+
+  <!-- Main Flex Section -->
+  <div class="research-flex-container">
+
+    <!-- Column 1 -->
+    <div class="flex-column">
+      <div class="grid-item flex-one">
+        <img src="img1.png" alt="Lab">
+      </div>
+      <div class="grid-item flex-two">
+        <img src="img5.png" alt="Pyomancer">
+      </div>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="flex-column">
+      <div class="grid-item flex-three">
+        <img src="img2.png" alt="telescope image">
+      </div>
+      <div class="grid-item flex-four">
+        <img src="img6.png" alt="lab material">
+      </div>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="flex-column">
+      <div class="grid-item flex-three">
+        <img src="img3.png" alt="Elevation Map">
+      </div>
+      <div class="grid-item flex-four">
+        <img src="img7.png" alt="team photo">
+      </div>
+    </div>
+
+    <!-- Column 4 -->
+    <div class="flex-column">
+      <div class="grid-item flex-five">
+        <img src="img4.png" alt="Cell and tissue">
+      </div>
+      <div class="grid-item flex-six">
+        <img src="img8.png" alt="Lab people">
+      </div>
+    </div>
+
+  </div>
 </section>
 <section class="patent-section">
     <div class="patent-header">
-        <h2>RECENTLY GRANTED PATENTS</h2>
+        <p>RECENTLY GRANTED PATENTS</p>
         <a href="#" class="view-all">VIEW ALL</a>
     </div>
 
@@ -138,7 +195,7 @@
                     <img src="patent1.png" alt="Patent 1 Diagram">
                 </div>
                 <div class="slide-content">
-                    <h3>REAL-TIME FOG REMOVAL SYSTEM AND ITS METHOD THEREOF</h3>
+                    <p1>REAL-TIME FOG REMOVAL SYSTEM AND ITS METHOD THEREOF</p1>
                     <p>The present invention provides a visible and near-infrared band's deep learning and pixel sharing-based system and method for image and video dehazing. It successfully restores hazy/foggy images...</p>
                     <div class="slide-buttons">
                         <a href="#" class="btn-read">READ MORE</a>
@@ -152,7 +209,7 @@
                     <img src="patent2.png" alt="Patent 2">
                 </div>
                 <div class="slide-content">
-                    <h3>SMART IRRIGATION SYSTEM BASED ON SOIL MOISTURE SENSORS</h3>
+                    <p1>SMART IRRIGATION SYSTEM BASED ON SOIL MOISTURE SENSORS</p1>
                     <p>This invention introduces an automated system that uses neural networks to analyze real-time soil data from distributed sensors, optimizing water delivery and reducing consumption by 40%...</p>
                     <div class="slide-buttons">
                         <a href="#" class="btn-read">READ MORE</a>
@@ -166,7 +223,7 @@
                     <img src="patent3.png" alt="Patent 3">
                 </div>
                 <div class="slide-content">
-                    <h3>AI-DRIVEN PATHOLOGY SLIDE ANALYZER FOR CANCER DETECTION</h3>
+                    <p1>AI-DRIVEN PATHOLOGY SLIDE ANALYZER FOR CANCER DETECTION</p1>
                     <p>A deep-learning algorithm trained on thousands of annotated tissue slides to assist pathologists in identifying early-stage carcinoma cells with a precision rate exceeding 98%...</p>
                     <div class="slide-buttons">
                         <a href="#" class="btn-read">READ MORE</a>
@@ -207,21 +264,21 @@
 
     </div>
 
-    <h2 class="ranking-footer-text">IIT ROORKEE RANKS AMONG THE TOP UNIVERSITIES</h2>
+    <p class="ranking-footer-text">IIT ROORKEE RANKS AMONG THE TOP UNIVERSITIES</p>
 </section>
 <section class="achievments-section">
     <div class="ach-header">
-        <h2>RECENT ACHIEVMENTS</h2>
+        <p>RECENT ACHIEVMENTS</p>
         <a href="#" class="view-all">VIEW ALL</a>
     </div>
-    <img src="arrow-left.png" class="arrow-ach prev-ach">
-    <img src="arrow-right.png" class="arrow-ach next-ach">
+    <img src="acharrowleft.svg" class="arrow-ach prev-ach">
+    <img src="acharrowright.svg" class="arrow-ach next-ach">
     <div class="slider-ach-wrapper">
         <div class="slider-ach-track">
             <div class="ach-card">
                 <img src="ach-1.png" alt="Achievement 1">
                 <div class="card-text">
-                    <h3>IIT Roorkee's Perovskite Start-Up Wins in IOCL Challenge...</h3>
+                    <p1>IIT Roorkee's Perovskite Start-Up Wins in IOCL Challenge...</p1>
                     <p>IIT Roorkee's Perovskite Innovation Pvt Ltd wins Indian Oil's Start-Up Challenge award...</p>
                 </div>
             </div>
@@ -229,7 +286,7 @@
             <div class="ach-card">
                 <img src="ach-2.png" alt="Achievement 2">
                 <div class="card-text">
-                    <h3>IIT Roorkee-based startup develops gun-shot detection technology</h3>
+                    <p1>IIT Roorkee-based startup develops gun-shot detection technology</p1>
                     <p>A startup, Linearised Amplifier Technologies and Services (Linear-AmpTech), incubated at iHub DivyaSampark...</p>
                 </div>
             </div>
@@ -237,7 +294,7 @@
             <div class="ach-card">
                 <img src="ach-3.png" alt="Achievement 3" class="hex-img">
                 <div class="card-text">
-                    <h3>IIT Roorkee leads study on Advanced Grid-Scale Energy Storage Technologies</h3>
+                    <p1>IIT Roorkee leads study on Advanced Grid-Scale Energy Storage Technologies</p1>
                     <p>This comprehensive study positions IIT Roorkee at the forefront of cutting-edge research, showcasing its dedication...</p>
                 </div>
             </div>
@@ -245,7 +302,7 @@
             <div class="ach-card">
                 <img src="ach-4.png" alt="Achievement 4">
                 <div class="card-text">
-                    <h3>Professor Sharma receives prestigious Shanti Swarup Bhatnagar Prize</h3>
+                    <p1>Professor Sharma receives prestigious Shanti Swarup Bhatnagar Prize</p1>
                     <p>Awarded for outstanding contributions to Mathematical Sciences, specifically in graph theory and network optimization...</p>
                 </div>
             </div>
@@ -253,7 +310,7 @@
             <div class="ach-card">
                 <img src="ach-5.png" alt="Achievement 5">
                 <div class="card-text">
-                    <h3>MoU signed with ISRO for collaborative research in Space Applications</h3>
+                    <p1>MoU signed with ISRO for collaborative research in Space Applications</p1>
                     <p>This partnership focuses on satellite data processing, deep learning for terrestrial monitoring, and quantum communication...</p>
                 </div>
             </div>
@@ -261,7 +318,7 @@
             <div class="ach-card">
                 <img src="ach-6.png" alt="Achievement 6">
                 <div class="card-text">
-                    <h3>New patented catalyst reduces industrial water consumption by 25%</h3>
+                    <p1>New patented catalyst reduces industrial water consumption by 25%</p1>
                     <p>Developed by the Chemical Engineering department, the novel method optimizes large-scale industrial processes...</p>
                 </div>
             </div>
@@ -276,27 +333,31 @@
 <section class="events-gallery">
     <div class="gallery-container">
         <div class="gallery-sidebar">
-            <h2>EVENTS GALLERY</h2>
+            <p1>EVENTS GALLERY</p1>
             <ul class="event-list">
                 <li class="event-item" data-index="0">THOMSO</li>
                 <li class="event-item" data-index="1">IITRMS</li>
                 <li class="event-item" data-index="2">CONVOCATION</li>
                 <li class="event-item active" data-index="3">COGNIZANCE</li>
                 <li class="event-item" data-index="4">TEDxIITRoorkee</li>
+                <li class="event-item" data-index="5">EUNOIA</li>
+                <li class="event-item" data-index="6">INTER-IIT</li>
             </ul>
         </div>
 
         <div class="gallery-main">
             <div class="gallery-slider">
-                <img src="arrow-left.png" class="gal-arrow gal-prev">
-                <img src="arrow-right.png" class="gal-arrow gal-next">
+                <img src="acharrowleft.svg" class="gal-arrow gal-prev">
+                <img src="acharrowright.svg" class="gal-arrow gal-next">
                 
                 <div class="gal-track">
-                    <img src="WhatsApp Image 2024-06-05 at 15.08 1.png" class="gal-slide active">
                     <img src="Rectangle 314.png" class="gal-slide">
                     <img src="ach-4.png" class="gal-slide">
                     <img src="ach-1.png" class="gal-slide">
+                    <img src="WhatsApp Image 2024-06-05 at 15.08 1.png" class="gal-slide active">
                      <img src="ach-2.png" class="gal-slide">
+                    <img src="ach-5.png" class="gal-slide">
+                    <img src="ach-6.png" class="gal-slide"> 
                 </div>
 
                 <div class="gal-dots">
@@ -305,6 +366,8 @@
                     <span class="g-dot" data-index="2"></span>
                     <span class="g-dot active" data-index="3"></span>
                     <span class="g-dot" data-index="4"></span>
+                    <span class="g-dot" data-index="5"></span>
+                    <span class="g-dot" data-index="6"></span>
                 </div>
             </div>
         </div>
@@ -313,7 +376,7 @@
 <section class="milestone-section">
     <div class="milestone-container">
         <div class="milestone-header">
-            <h2>MILESTONES</h2>
+            <p>MILESTONES</p>
             <a href="#" class="view-all">VIEW ALL</a>
         </div>
 
@@ -337,7 +400,7 @@
                     <div class="m-content">
                         <img src="ach-1.png" class="m-img">
                         <div class="m-text">
-                            <h3>Establishment of the Green Campus Initiative</h3>
+                            <p1>Establishment of the Green Campus Initiative</p1>
                             <p>In 2018, the institute launched a massive solar grid project, aiming to provide 40% of the campus's electricity through renewable sources.</p>
                             <button class="read-more">READ MORE</button>
                         </div>
@@ -348,7 +411,7 @@
                     <div class="m-content">
                         <img src="ach-2.png" class="m-img">
                         <div class="m-text">
-                            <h3>Centenary Celebration of Engineering Excellence</h3>
+                            <p1>Centenary Celebration of Engineering Excellence</p1>
                             <p>The campus celebrated a historic 100-year milestone of the Civil Engineering department, hosting alumni from over 50 countries.</p>
                             <button class="read-more">READ MORE</button>
                         </div>
@@ -359,7 +422,7 @@
                     <div class="m-content">
                         <img src="ach-4.png" class="m-img">
                         <div class="m-text">
-                            <h3>Pioneering Virtual Reality Classrooms</h3>
+                            <p1>Pioneering Virtual Reality Classrooms</p1>
                             <p>Adapting to global changes, the institute became the first in the region to implement fully immersive VR laboratories for remote research.</p>
                             <button class="read-more">READ MORE</button>
                         </div>
@@ -370,7 +433,7 @@
                     <div class="m-content">
                         <img src="Rectangle 314.png" class="m-img">
                         <div class="m-text">
-                            <h3>National Award for Rural Innovation</h3>
+                            <p1>National Award for Rural Innovation</p1>
                             <p>Our students developed a low-cost water filtration system that was successfully deployed in 12 villages across the state.</p>
                             <button class="read-more">READ MORE</button>
                         </div>
@@ -381,7 +444,7 @@
                     <div class="m-content">
                         <img src="ach-5.png" class="m-img">
                         <div class="m-text">
-                            <h3>The New High-Performance Computing Center</h3>
+                            <p1>The New High-Performance Computing Center</p1>
                             <p>A state-of-the-art AI research facility was inaugurated, featuring one of the fastest supercomputers in the university network.</p>
                             <button class="read-more">READ MORE</button>
                         </div>
@@ -392,7 +455,7 @@
                     <div class="m-content">
                         <img src="image 19.png" class="m-img">
                         <div class="m-text">
-                            <h3>IITR's Architecture Department ranked <span>1<sup>st</sup></span> among all colleges in India</h3>
+                            <p1>IITR's Architecture Department ranked <p2>1<sup>st</sup></p2> among all colleges in India</p1>
                             <p>Department of Architecture, IIT Roorkee remains unparalleled and has maintained its position as rank #1 in the NIRF Rankings for 2023.</p>
                             <button class="read-more">READ MORE</button>
                         </div>
@@ -403,7 +466,7 @@
                     <div class="m-content">
                         <img src="ach-6.png" class="m-img">
                         <div class="m-text">
-                            <h3>Launch of the Deep Space Research Hub</h3>
+                            <p1>Launch of the Deep Space Research Hub</p1>
                             <p>Looking toward the future, the 2024 milestone marks our official partnership with international space agencies for lunar study.</p>
                             <button class="read-more">READ MORE</button>
                         </div>
@@ -419,7 +482,7 @@
         
         <div class="notice-box">
             <div class="header-row">
-                <h2>NOTICE BOARD</h2>
+                <p1>NOTICE BOARD</p1>
                 <a href="#">VIEW ALL</a>
             </div>
             
@@ -449,7 +512,7 @@
 
         <div class="event-box">
             <div class="header-row">
-                <h2>UPCOMING EVENTS</h2>
+                <p1>UPCOMING EVENTS</p1>
                 <a href="#">VIEW ALL</a>
             </div>
 
@@ -491,51 +554,68 @@
             </div>
             
             <div class="contact-details">
-                <p>How to reach IIT Roorkee</p>
-                <p>+91-1332-285311</p>
-                <p>registrar@iitr.ac.in</p>
-            </div>
+    <div class="contact-item">
+        <p>How to reach IIT Roorkee</p>
+        <img src="location.svg" class="contact-icon">
+    </div>
+    <div class="contact-item">
+        <p>+91-1332-285311</p>
+        <img src="phone.svg" class="contact-icon">
+    </div>
+    <div class="contact-item">
+        <p>registrar@iitr.ac.in</p>
+        <img src="email.svg" class="contact-icon">
+    </div>
+</div>
             
             <div class="social-icons">
-                <img src="fb.png">
-                <img src="x.png">
-                <img src="linkedin.png">
-                <img src="insta.png">
-                <img src="yt.png">
+                <img src="facebook.svg fill.svg">
+                <img src="x_logo.svg fill.svg">
+                <img src="linkedin-svgrepo-com 1.svg">
+                <img src="instagram.svg fill.png">
+                <img src="youtube.svg fill.png">
             </div>
         </div>
 
         <div class="footer-links">
             <div class="link-col">
-                <h3>EXPLORE</h3>
+                <p1>EXPLORE</p1>
                 <ul>
-                    <li>Administration</li>
+                    <li>Administration<img src="arrow_outward.svg"></li>
                     <li>Tenders and Quotations</li>
                     <li>Awards and Honours</li>
-                    <li>RTI</li>
+                    <li>RTI<img src="arrow_outward.svg"></li>
                     <li>Departments</li>
+                    <li>Industry Consultation</li>
+                    <li>International Students<img src="arrow_outward.svg"></li>
                 </ul>
             </div>
             <div class="link-col">
-                <h3>RANKINGS</h3>
+                <p1>RANKINGS</p1>
                 <ul>
-                    <li>NIRF</li>
+                    <li>NIRF<img src="arrow_outward.svg"></li>
                     <li>ARIIA</li>
                     <li>QS</li>
                 </ul>
             </div>
             <div class="link-col">
-                <h3>QUICK ACCESS</h3>
+                <p1>QUICK ACCESS</p1>
                 <ul>
-                    <li>Donate</li>
+                    <li>Donate<img src="arrow_outward.svg"></li>
+                    <li>Suppoort @IITR</li>
+                    <li>Internet Portal</li>
+                    <li>Give Feedback<img src="arrow_outward.svg"></li>
                     <li>Webmail</li>
+                    <li>Internal Complaints Committee</li>
+                    <li>Book Guest House</li>
+                    <li>IIT Council<img src="arrow_outward.svg"></li>
                     <li>MoE</li>
                 </ul>
             </div>
             <div class="link-col">
-                <h3>QUICK LINKS</h3>
+                <p1>QUICK LINKS</p1>
                 <ul>
-                    <li>Safety</li>
+                    <li>Safety<img src="arrow_outward.svg"></li>
                     <li>Security</li>
                     <li>Hindi Cell</li>
                 </ul>
